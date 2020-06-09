@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wörterbuch", "Wörterbuch\Wörterbuch.csproj", "{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CC85799-3399-4E87-A309-AFBCEEC340E6}
+	EndGlobalSection
+EndGlobal

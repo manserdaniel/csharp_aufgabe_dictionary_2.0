@@ -1,0 +1,10 @@
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\bin\Debug\Wörterbuch.exe.config
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\bin\Debug\Wörterbuch.exe
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\bin\Debug\Wörterbuch.pdb
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.csprojAssemblyReference.cache
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.Form1.resources
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.Properties.Resources.resources
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.csproj.GenerateResource.cache
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.csproj.CoreCompileInputs.cache
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.exe
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.pdb
