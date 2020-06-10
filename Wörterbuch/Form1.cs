@@ -12,14 +12,14 @@ namespace Wörterbuch
 {
     public partial class Form1 : Form
     {
-
-        Dictionary<string, string> translations = new Dictionary<string, string>();
-        List<string> alphabet = new List<string>() { "", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+        WoerterbuchLogic.WoerterbuchController controller = new WoerterbuchLogic.WoerterbuchController("C:\\Users\\daniel\\Desktop\\CodingCampus\\Spezialisierung_C#\\dictionary.csv");
+        //Dictionary<string, List<string>> translations = new Dictionary<string, List<string>>();
 
         public Form1()
         {
             InitializeComponent();
-            lbAlphabet.DataSource = alphabet;
+            lbAlphabet.DataSource = controller.GetAlphabet();
+            //controller.WordsDict = translations;
         }
 
         /// <summary>
@@ -30,22 +30,21 @@ namespace Wörterbuch
         private void btnAdd(object sender, EventArgs e)
         {
             var germanWord = tbGerman.Text;
-            var englishWord = tbEnglish.Text;
+            var englishWord = tbEnglishIn.Text;
+            var dutchword = tbDutchIn.Text;
 
             try
             {
-                if (!string.IsNullOrEmpty(germanWord) && !string.IsNullOrEmpty(englishWord))
-                {
-                    translations.Add(germanWord, englishWord);
-                    UpdateTranslations();
-                    tbGerman.Text = null;
-                    tbEnglish.Text = null;
-                }
+                controller.AddWords(germanWord, new List<string>() { englishWord, dutchword });
             }
-            catch (ArgumentException)
+            catch(Exception ex)
             {
-                Console.WriteLine("Dieses Wort existiert bereits!");
+                MessageBox.Show(ex.Message);
             }
+            UpdateTranslations();
+            tbGerman.Text = null;
+            tbEnglishIn.Text = null;
+            tbDutchIn.Text = null;
         }
 
         /// <summary>
@@ -53,16 +52,21 @@ namespace Wörterbuch
         /// </summary>
         private void UpdateTranslations()
         {
-            lbTranslation.DataSource = translations.Keys.OrderBy(x => x).ToList();
+            var selectetLetter = lbAlphabet.SelectedItem as string;
+            var filterString = tbSearch.Text;
+
+            lbTranslation.DataSource = controller.FindResults(filterString, selectetLetter);
+
         }
 
-        private void lbTranslation_SelectedIndexChanged(object sender, EventArgs e)
+        private void lbTranslation_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             var selectedWord = lbTranslation.SelectedItem as string;
 
-            if (!string.IsNullOrEmpty(selectedWord) && translations.ContainsKey(selectedWord))
+            if (!string.IsNullOrEmpty(selectedWord) && controller.WordsDict.ContainsKey(selectedWord))
             {
-                tbEnglisch.Text = translations[selectedWord];
+                tbEnglishOut.Text = controller.WordsDict.FirstOrDefault(x => x.Key == selectedWord).Value[0].ToString();
+                tbDutchOut.Text = controller.WordsDict.FirstOrDefault(x => x.Key == selectedWord).Value[1].ToString();
             }
         }
 
@@ -73,7 +77,7 @@ namespace Wörterbuch
         /// <param name="e"></param>
         private void btnExport_Click(object sender, EventArgs e)
         {
-            System.IO.File.WriteAllLines(Properties.Resources.FilePath, translations.Select(d => $"{d.Key};{d.Value};"));
+            controller.WriteToFile();
         }
 
         /// <summary>
@@ -85,16 +89,8 @@ namespace Wörterbuch
         {
             try
             {
-                translations.Clear();
-                System.IO.File.ReadAllLines(
-                   Properties.Resources.FilePath)
-                    .Select(c => new { German = c.Split(';')[0], English = c.Split(';')[1] })
-                    .ToList()
-                    .ForEach(x =>
-                        translations.Add(x.German, x.English));
-
+                controller.ReadDictionary();
                 UpdateTranslations();
-
             }
             catch (System.IO.FileNotFoundException ex)
             {
@@ -102,22 +98,15 @@ namespace Wörterbuch
             }
         }
 
-
-        private void tbSearch_TextChanged(object sender, EventArgs e)
+        private void lbAlphabet_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lbTranslation.DataSource = translations.Where(x => x.Key.Contains(tbSearch.Text)).Select(x => x.Key).ToList();
+            UpdateTranslations();
         }
 
-        private void lbAlphabet_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void tbSearch_TextChanged_1(object sender, EventArgs e)
         {
-            var selectetLetter = lbAlphabet.SelectedItem as string;
-            if (selectetLetter != "")
-            {
-                lbTranslation.DataSource = translations.Where(x => x.Key.StartsWith(selectetLetter)).Select(x => x.Key).ToList();
-            } else if (selectetLetter == "")
-            {
-                UpdateTranslations();
-            }
+            UpdateTranslations();
         }
+
     }
 }

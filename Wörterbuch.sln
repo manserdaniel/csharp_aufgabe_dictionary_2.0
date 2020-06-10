@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wörterbuch", "Wörterbuch\Wörterbuch.csproj", "{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoerterbuchLogic", "WoerterbuchLogic\WoerterbuchLogic.csproj", "{D7B62AE0-90C3-4AE7-BB24-90F5C02CC64E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FF9933C-2138-4B88-BEE6-A6CA3B5EB7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B62AE0-90C3-4AE7-BB24-90F5C02CC64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B62AE0-90C3-4AE7-BB24-90F5C02CC64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B62AE0-90C3-4AE7-BB24-90F5C02CC64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B62AE0-90C3-4AE7-BB24-90F5C02CC64E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

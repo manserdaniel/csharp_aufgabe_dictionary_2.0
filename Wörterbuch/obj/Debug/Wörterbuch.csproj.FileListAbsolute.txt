@@ -8,3 +8,6 @@ C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\W�
 C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.csproj.CoreCompileInputs.cache
 C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.exe
 C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.pdb
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\bin\Debug\WoerterbuchLogic.dll
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\bin\Debug\WoerterbuchLogic.pdb
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\Wörterbuch\obj\Debug\Wörterbuch.csproj.CopyComplete

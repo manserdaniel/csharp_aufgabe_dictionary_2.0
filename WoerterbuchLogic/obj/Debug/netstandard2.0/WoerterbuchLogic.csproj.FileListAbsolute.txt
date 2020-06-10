@@ -1,0 +1,9 @@
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\bin\Debug\netstandard2.0\WoerterbuchLogic.deps.json
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\bin\Debug\netstandard2.0\WoerterbuchLogic.dll
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\bin\Debug\netstandard2.0\WoerterbuchLogic.pdb
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\obj\Debug\netstandard2.0\WoerterbuchLogic.csprojAssemblyReference.cache
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\obj\Debug\netstandard2.0\WoerterbuchLogic.AssemblyInfoInputs.cache
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\obj\Debug\netstandard2.0\WoerterbuchLogic.AssemblyInfo.cs
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\obj\Debug\netstandard2.0\WoerterbuchLogic.csproj.CoreCompileInputs.cache
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\obj\Debug\netstandard2.0\WoerterbuchLogic.dll
+C:\Users\daniel\Desktop\CodingCampus\Spezialisierung_C#\Übung_10_Wörterbuch\Wörterbuch\WoerterbuchLogic\obj\Debug\netstandard2.0\WoerterbuchLogic.pdb
